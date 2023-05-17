@@ -1,23 +1,70 @@
-import java.util.Scanner;
-
 public class ComparandoInteiros {
     public static void main(String[] args) {
+        // Desenho da letra J
+        System.out.println("*****");
+        System.out.println("    **");
+        System.out.println("    **");
+        System.out.println("    **");
+        System.out.println("**  **");
+        System.out.println("******");
+        System.out.println();
 
-        try (Scanner scanner = new Scanner(System.in)) {
-            
-            System.out.print("Insira o primeiro número inteiro: ");
-            int numero1 = scanner.nextInt();
+        // Desenho da letra E
+        System.out.println("********");
+        System.out.println("**      ");
+        System.out.println("********");
+        System.out.println("**      ");
+        System.out.println("**      ");
+        System.out.println("********");
+        System.out.println();
 
-            System.out.print("Insira o segundo número inteiro: ");
-            int numero2 = scanner.nextInt();
+        // Desenho da letra S
+        System.out.println(" ***** ");
+        System.out.println("**   **");
+        System.out.println("**     ");
+        System.out.println(" ***** ");
+        System.out.println("     **");
+        System.out.println("**   **");
+        System.out.println(" ***** ");
+        System.out.println();
 
-            if (numero1 < numero2)
-            System.out.println(numero2 + " é maior");
-            else if (numero1 > numero2)
-            System.out.println(numero1 + " é maior");
-            else
-            System.out.println("Os numeros são iguais!");
-        }
+        // Desenho da letra S
+        System.out.println(" ***** ");
+        System.out.println("**   **");
+        System.out.println("**     ");
+        System.out.println(" ***** ");
+        System.out.println("     **");
+        System.out.println("**   **");
+        System.out.println(" ***** ");
+        System.out.println();
 
+        // Desenho da letra I
+        System.out.println("******");
+        System.out.println("  **  ");
+        System.out.println("  **  ");
+        System.out.println("  **  ");
+        System.out.println("  **  ");
+        System.out.println("  **  ");
+        System.out.println("******");
+        System.out.println();
+
+        // Desenho da letra C
+        System.out.println(" ***** ");
+        System.out.println("**   **");
+        System.out.println("**     ");
+        System.out.println("**     ");
+        System.out.println("**     ");
+        System.out.println("**   **");
+        System.out.println(" ***** ");
+        System.out.println();
+
+        // Desenho da letra A
+        System.out.println("   ***   ");
+        System.out.println("  ** **  ");
+        System.out.println(" **   ** ");
+        System.out.println("**     **");
+        System.out.println("*********");
+        System.out.println("**     **");
+        System.out.println("**     **");
     }
 }
