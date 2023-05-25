@@ -1,0 +1,48 @@
+3.5 Qual é o propósito da palavra-chave new? Explique o que acontece quando você a utiliza.
+A palavra-chave "new" em Java é usada para criar uma nova instância de uma classe, alocar memória, inicializar o objeto por meio do construtor e retornar uma referência para o objeto criado. Isso permite a criação de objetos e o acesso aos seus métodos e variáveis de instância.
+
+Por exemplo, ao criar uma instância de uma classe "Carro" usando "new Carro()", você está criando um novo objeto do tipo "Carro" com sua própria área de memória e estado inicial.
+
+Carro meuCarro = new Carro(); // Cria um novo objeto do tipo Carro
+
+3.6 Um construtor padrão é um construtor fornecido automaticamente pelo compilador quando uma classe não possui construtores definidos explicitamente. Ele cria uma instância da classe com um estado inicial padrão. Se uma classe tiver apenas o construtor padrão, as variáveis de instância são inicializadas com valores padrão, dependendo do tipo de dado das variáveis.
+
+Exemplo de uma classe com construtor padrão e variáveis de instância inicializadas pelo construtor padrão:
+
+public class ExemploClasse {
+    private int numero;
+    private String texto;
+    private boolean condicao;
+
+    // Construtor padrão
+    public ExemploClasse() {
+        // Variáveis de instância são inicializadas pelo construtor padrão
+        // Neste caso, número é inicializado com 0, texto é inicializado com null e condicao é inicializado com false
+    }
+
+    // Outros métodos e construtores da classe...
+}
+
+3.7 Explique o propósito de uma variável de instância.
+
+O propósito principal de uma variável de instância é armazenar informações únicas para cada objeto individualmente. Cada objeto tem sua própria cópia das variáveis de instância, e elas podem ter valores diferentes entre diferentes objetos da mesma classe.
+Ao utilizar variáveis de instância em uma classe, você pode modelar e representar o estado e as características individuais de cada objeto, permitindo uma programação orientada a objetos eficiente e modular.
+
+3.8 A maioria de classes precisa ser importada antes de poder ser utilizada em um aplicativo. Por que cada aplicativo ptxle utilizar as classes System e Strin g sem antes importá-las?
+
+As classes System e String estão disponíveis para uso em todos os arquivos Java sem a necessidade de uma importação explícita devido ao fato de pertencerem ao pacote java.lang, que é automaticamente importado pelo compilador Java. Essa é uma exceção especial e não se aplica a outras classes em pacotes diferentes, que precisam ser importadas antes de poderem ser utilizadas.
+
+3.9 Explique como um programa pode utilizar a classe Scanner sem importar a classe.
+
+Para utilizar a classe Scanner em um programa Java, é necessário importá-la no início do arquivo. Isso permite que o compilador encontre a classe e a utilize corretamente. Caso não seja feita a importação, é necessário utilizar o nome completo da classe, incluindo o pacote, ao fazer referência a ela no código.
+
+Por exemplo:
+
+public class MeuPrograma {
+    public static void main(String[] args) {
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        // Restante do código...
+    }
+}
+
+3.10 
