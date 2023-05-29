@@ -2,20 +2,18 @@ import java.util.Scanner;
 
 public class CalculadoraFaixaSolitaria {
     public static void main(String[] args) {
-        // Criar um objeto Scanner para ler a entrada do usuário
         Scanner scanner = new Scanner(System.in);
 
-        // Ler as informações do usuário
-        System.out.print("Milhas totais dirigidas por dia: ");
+        System.out.print("Total de milhas dirigidas por dia: ");
         double milhasPorDia = scanner.nextDouble();
 
-        System.out.print("Preço por galão de gasolina: ");
+        System.out.print("Preço por 1 galão de gasolina: ");
         double precoGasolina = scanner.nextDouble();
 
-        System.out.print("Milhas médias por galão: ");
+        System.out.print("Média de milhas por galão: ");
         double milhasPorGalao = scanner.nextDouble();
 
-        System.out.print("Taxas de estacionamento por dia: ");
+        System.out.print("Taxas para estacionamento por dia: ");
         double taxasEstacionamento = scanner.nextDouble();
 
         System.out.print("Pedágio por dia: ");
@@ -25,7 +23,7 @@ public class CalculadoraFaixaSolitaria {
         double custoDiario = calcularCustoDiario(milhasPorDia, precoGasolina, milhasPorGalao, taxasEstacionamento, pedagio);
 
         // Exibir o resultado
-        System.out.println("O custo diário de dirigir é: R$" + custoDiario);
+        System.out.println("O custo diário de dirigir é igual a: R$" + custoDiario);
 
         // Fechar o Scanner
         scanner.close();

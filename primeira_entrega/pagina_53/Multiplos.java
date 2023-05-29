@@ -5,12 +5,12 @@ public class Multiplos {
         try (Scanner scanner = new Scanner(System.in)){
             for (;;) {
                 System.out.println("Insira o primeiro número inteiro na tela:");
-                int numero1 = scanner.nextInt();
+                int numero_1 = scanner.nextInt();
 
                 System.out.println("Insira o primeiro número inteiro na tela:");
-                int numero2 = scanner.nextInt();
+                int numero_2 = scanner.nextInt();
 
-                if (numero1 % numero2 == 0){
+                if (numero_1 % numero_2 == 0){
                     System.out.println("Os números são multiplos entre si!");
                 } else {
                     System.out.println("Os números não são multiplos entre si");
@@ -18,7 +18,7 @@ public class Multiplos {
 
                 int multiplica;
 
-                multiplica = numero1 * numero2;
+                multiplica = numero_1 * numero_2;
                 System.out.println("A multiplicação dos números inseridos resulta em: " + multiplica);
             }
         }

@@ -1,12 +1,10 @@
+package cinema;
+
 public class Sessao {
     private int numeroSessao;
 
     public void setSessaoNum(int sessoes) {
         numeroSessao = sessoes;
-    }
-
-    public int getSessaoNum() {
-        return numeroSessao;
     }
 
     int[] sessao = new int[5];
@@ -24,20 +22,20 @@ public class Sessao {
         }
     }
 
-    public void escolheSessao() {
+    public int escolheSessao() {
         int i = 0;
-
         while (sessao[i] < numeroSessao) {
             sessao[i]++;
             if (sessao[i] == numeroSessao) {
                 break;
             }
         }
+        return sessao[i];
+    }
 
+    public void autentificaSessao() {
         if (numeroSessao > 5) {
             System.out.println("ATENÇÃO: Escolha uma sessão de 1 a 5!");
-        } else {
-            System.out.println("Sua sessão é a: " + sessao[i]);
         }
     }
 }

@@ -1,3 +1,5 @@
+package cinema;
+
 public class Assento {
     private int numeroAssento;
 
@@ -24,21 +26,20 @@ public class Assento {
         }
     }
 
-    public void escolheAssento() {
+    public int escolheAssento() {
         int i = 0;
-
         while (assento[i] < numeroAssento) {
             assento[i]++;
             if (assento[i] == numeroAssento) {
                 break;
             }
         }
+        return assento[i];
+    }
 
+    public void autentificaAssento() {
         if (numeroAssento > 6) {
             System.out.println("ATENÇÃO: Escolha um assento de 1 a 6!");
-        } else {
-            System.out.println("Seu assento é o: " + assento[i]);
-
         }
     }
 }

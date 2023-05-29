@@ -1,3 +1,5 @@
+package cinema;
+
 public class Fileira {
     private int numeroFileira;
 
@@ -24,21 +26,20 @@ public class Fileira {
         }
     }
 
-    public void escolheFileira() {
+    public int escolheFileira() {
         int i = 0;
-        
         while (fileira[i] < numeroFileira) {
             fileira[i]++;
             if (fileira[i] == numeroFileira) {
                 break;
             }
         }
+        return fileira[i];
+    }
 
+    public void autentificaFileira() {
         if (numeroFileira > 10) {
             System.out.println("ATENÇÃO: Escolha uma fileira de 1 a 10!");
-        } else {
-                System.out.println("Sua fileira é a: " + fileira[i]);
-
         }
     }
 }
