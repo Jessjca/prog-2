@@ -1,3 +1,5 @@
+package Aula_07;
+
 public class Lutador {
     //Atributos
     private String nome;

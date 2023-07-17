@@ -4,10 +4,12 @@
         "primeira_entrega/pagina_80/date",
         "primeira_entrega/pagina_118",
         "primeira_entrega/pagina_117",
+        "atividades_sala/atividade_arraylist",
         "atividade_sala_PESSOA",
         "SALA_CINEMA",
         "PROVA_1_PROG2",
-        "atividades_sala/atividade_arraylist"
+        "POO/Aula_07",
+        "PROVA_2/Questao_03"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
