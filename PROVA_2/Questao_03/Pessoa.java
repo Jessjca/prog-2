@@ -1,8 +1,8 @@
-public class PessoaFisica implements Tributavel {
+public class Pessoa implements Tributavel{
     private String nome;
     private double renda;
 
-    public PessoaFisica(String nome, double renda) {
+    public Pessoa(String nome, double renda) {
         this.nome = nome;
         this.renda = renda;
     }
