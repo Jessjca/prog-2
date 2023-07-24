@@ -7,9 +7,10 @@
         "atividades_sala/atividade_arraylist",
         "atividade_sala_PESSOA",
         "SALA_CINEMA",
+        "PROVA_2/Questao_03",
         "PROVA_1_PROG2",
         "POO/Aula_07",
-        "PROVA_2/Questao_03"
+        "ATIVIDADES_EM_SALA/atividade_singleton"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
