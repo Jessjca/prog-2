@@ -1,0 +1,43 @@
+11.15 Liste as várias condições excepcionais que ocorreram em programas por todo este livro até agora. Liste o maior número possível de condições 
+excepcionais adicionais que você puder. Para cada uma destas, descreva de maneira resumida como um programa trataria tipicamente a exceção 
+utilizando as técnicas de tratamento de exceções discutidas neste capítulo. As exceções típicas incluem a divisão por zero e índice de arrav fora dos 
+limites.
+
+
+Em java há muitas exceções que podem acontecer, essa é uma listagem de algumas que podem acontecer:
+
+1. ArithmeticException: Lançada quando ocorre um erro aritmético, como divisão por zero.
+
+2. NullPointerException: Lançada quando uma referência de objeto é nula e você tenta acessar seus métodos ou campos.
+
+3. ArrayIndexOutOfBoundsException: Lançada quando você tenta acessar um índice inválido de um array.
+
+4. FileNotFoundException: Lançada quando um arquivo não pode ser encontrado em uma operação de leitura ou gravação de arquivo.
+
+5. IOException: Lançada quando ocorre uma falha de entrada/saída durante a leitura ou gravação de dados.
+
+6. ClassCastException: Lançada quando uma tentativa de conversão de um objeto para um tipo incompatível é feita.
+
+7. InterruptedException: Lançada quando uma thread é interrompida enquanto está em estado de espera.
+
+8. IllegalArgumentException: Lançada quando um argumento passado para um método é inválido.
+
+
+Uma das mais frequentes lançada por exemplo, quando há uma divisão por 0, é a ArithmeticException, que é tratada com um bloco try/catch como mostrado abaixo:
+        try {
+            int result = dividend / divisor;
+            System.out.println("Resultado: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Erro aritmético: Divisão por zero não é permitida.");
+        }
+
+Outra que acontece com muita frequência e resulta quando é tentado acessar um índice de um array fora dos limites dele é a ArrayIndexOutOfBoundsException, que também é tratada com um bloco try/catch como mostrado abaixo:
+
+        int[] numbers = { 1, 2, 3 };
+
+        try {
+            int value = numbers[5]; // Tentando acessar um índice inválido
+            System.out.println("Valor: " + value);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Erro: Índice fora dos limites do array.");
+        }

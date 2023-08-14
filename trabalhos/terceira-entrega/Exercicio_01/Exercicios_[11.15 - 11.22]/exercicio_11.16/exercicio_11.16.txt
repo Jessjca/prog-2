@@ -1,0 +1,12 @@
+Lidar com erros em construtores em Java é difícil devido às limitações intrínsecas dos construtores e às questões relacionadas à inicialização adequada e desalocação de recursos. Portanto, é importante projetar construtores de forma cuidadosa e considerar outras abordagens para criar objetos de forma segura e robusta.
+
+Uma boa forma de lidar com erro em construtores é através do tratamente de exceções. É eficiente porque permite capturar e tratar situações excepcionais que possam ocorrer durante a inicialização de objetos. O uso de exceções permite que o construtor indique que algo deu errado, tornando possível para o código cliente reconhecer e lidar com a situação de forma apropriada. 
+
+
+    public Rectangle(int width, int height) throws IllegalArgumentException {
+        if (width <= 0 || height <= 0) {
+            throw new IllegalArgumentException("Largura e altura devem ser positivas.");
+        }
+
+
+No exemplo acima, o programador quer garantir que não sejam inseridos valores negativos para largura e altura, representando através do 'throws IllegalArgumentException' no cabeçalho que o construtor pode lançar essa exceção caso receba argumentos inválidos, e pede para tratá-la com o throw new IllegalArgumentException, que é responsável por criar uma instância dessa exceção, fornecendo uma mensagem descritiva que informa o motivo do erro.
