@@ -12,6 +12,6 @@ public class Main {
         livro[0].abrir();
         livro[0].folhear(98);
         
-        System.out.println(livro[0].detalhes());;
+        System.out.println(livro[0].detalhes());
     }
 }
